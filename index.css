@@ -1,0 +1,13 @@
+
+a:hover {
+    text-decoration: underline;
+    color: grey;
+}
+.logo {
+    color: white;
+    text-transform: uppercase;
+}
+#box {
+    background-color: orange;
+    box-orient: horizontal;
+}
