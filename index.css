@@ -1,51 +1,130 @@
+body {
+    padding: 0;
+    margin: 0;
+}
 header {
-    padding-left: 60px;
+    padding-left: 60px;   
+}
+.inform-box {
+    font-size: 11pt;
+    padding-left: 40px;
+}
+.contacts {
+    margin-left: auto;
     padding-bottom: 0px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    
+    color: grey;
 }
-.black-text {
-    color: black;
-    padding-right: 100px;
-}
-a:hover {
+.contacts a:hover {
     text-decoration: underline;
     color: grey;
 }
-.store-description {
-    color: white;
-    text-transform: uppercase;
-    text-align: left;
+.contacts a {
+    padding-right: 20px;
+    text-decoration: none;
 }
 #box {
     background-color: orange;
     box-orient: horizontal;
+    align-items: center;
+    display: flex;
+    height: 70px;
+}
+.logo {
+    width: 10%;
+    margin-right: 40px;
+    padding-left:100px;
+}
+.logo img {
+    width: 160px;
 }
 .menu {
     color: white;
+    text-align: right;
+    margin-left: auto;
+}
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.menu a:hover {
+    color:black;
+}
+.social-media {
+    text-align: right;
+    background-color: orange;
+}
+.social-media img {
+    width: 40px;
+    height: 40px;
+}
+.social-media {
+    margin-left: auto;
+    padding-right: 80px;
+}
+.background {
+    background: url("img/background.jpeg") no-repeat center;
+    }
+.background-text {
+    padding-left: 50px;
+    padding-top: 300px;
+    padding-bottom: 300px;
+    font-size: 50px;
+}
+.font-20 {
+    font-size: 20pt;
+    color: orange;
+}
+
+.background-text p {
+    text-transform: capitalize;
+}
+
+.horizontal-line {
+    width: 40px;
+    height: 2px;
+    margin-left: 0px;
+    background-color: orange;
+    border: 0;
+}
+button {
+    color: white;
+    text-transform: capitalize;
+    background-color: orange;
+    border: 0;
+    border-radius: 2px;
+    width: 140px;
+    height: 50px;
+}
+button:hover {
+    background:black;
+}
+.inform-box {
+    display: flex;
+    align-items: center;
+    padding-right: 60px;
+}
+.inform-box p {
+    color: grey;
+}
+.orange {
+    color: orange;
+}
+.service-list {
+    display:flex;
+}
+.box-list {
+    width: 25%;
     text-align: center;
 }
-.store {
-    color: orange;
-    text-transform: uppercase;
+.box-list img {
+    width: 100px;
+    height: 80px;
 }
-.we-have-everything {
-    text-transform: capitalize;
+#grey-text {
+    color: grey;
+    font-size: 12pt;
 }
-.inventory {
-    color:grey;
-}
-.button {
-    color:orange;
-    text-transform: capitalize;
-}
-#contacts {
-    text-align: right;
-    padding-bottom: 0px;
-}
-#box-container {
-    height: 500px;
-    display: flex;
+.green {
+    color: green;
 }
