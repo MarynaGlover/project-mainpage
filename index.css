@@ -1,13 +1,51 @@
-
+header {
+    padding-left: 60px;
+    padding-bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+.black-text {
+    color: black;
+    padding-right: 100px;
+}
 a:hover {
     text-decoration: underline;
     color: grey;
 }
-.logo {
+.store-description {
     color: white;
     text-transform: uppercase;
+    text-align: left;
 }
 #box {
     background-color: orange;
     box-orient: horizontal;
+}
+.menu {
+    color: white;
+    text-align: center;
+}
+.store {
+    color: orange;
+    text-transform: uppercase;
+}
+.we-have-everything {
+    text-transform: capitalize;
+}
+.inventory {
+    color:grey;
+}
+.button {
+    color:orange;
+    text-transform: capitalize;
+}
+#contacts {
+    text-align: right;
+    padding-bottom: 0px;
+}
+#box-container {
+    height: 500px;
+    display: flex;
 }
