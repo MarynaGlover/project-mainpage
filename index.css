@@ -5,9 +5,15 @@ body {
 header {
     padding-left: 60px;   
 }
+p {
+    padding: 0;
+    margin: 0;
+}
 .inform-box {
-    font-size: 11pt;
+    font-size: 14px;
     padding-left: 40px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","SF Pro Text";
+
 }
 .contacts {
     margin-left: auto;
@@ -35,28 +41,51 @@ header {
     padding-left:100px;
 }
 .logo img {
-    width: 160px;
+    width: 157px;
 }
 .menu {
+    margin-left: auto;
+    margin-right: -200px;
+}
+#nav {
     color: white;
     text-align: right;
     margin-left: auto;
+    text-decoration: none;
+    list-style-type: none;
 }
+#nav li {
+    display: inline;
+}    
+#nav a {
+    margin-right: 30px;
+}
+
 .menu a {
     color: white;
     text-decoration: none;
-    margin-right: 20px;
+    font-size: 14px;
+    font-family: Work Sans,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-weight: 700;
+    padding-right: 40;
 }
 .menu a:hover {
     color:black;
+    text-decoration: underline;
 }
 .social-media {
     text-align: right;
     background-color: orange;
 }
 .social-media img {
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
+    padding-right: 10px;
+}
+.social-media img:hover {
+    background-color: white;
 }
 .social-media {
     margin-left: auto;
@@ -64,37 +93,54 @@ header {
 }
 .background {
     background: url("img/background.jpeg") no-repeat center;
+    background-size: 100% auto;
+    background-position: center top;
+    position: relative;
+    height: 675px;
     }
 .background-text {
-    padding-left: 50px;
-    padding-top: 300px;
-    padding-bottom: 300px;
-    font-size: 50px;
+    padding-left: 100px;
+    padding-top: 200px;
+    padding-bottom: 0px;
 }
-.font-20 {
-    font-size: 20pt;
+.musical-instruments {
     color: orange;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: Work Sans,sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+
 }
 
-.background-text p {
+.selection {
     text-transform: capitalize;
+    font-size: 54px;
+    color: #242424;
+    line-height: 1.2;
+    font-family: Work Sans,sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    font-style: normal;
+    letter-spacing: 0;
 }
 
 .horizontal-line {
-    width: 40px;
+    width: 60px;
     height: 2px;
     margin-left: 0px;
     background-color: orange;
     border: 0;
+    margin-top: 20px;
 }
 button {
     color: white;
     text-transform: capitalize;
     background-color: orange;
     border: 0;
-    border-radius: 2px;
-    width: 140px;
-    height: 50px;
+    border-radius: 4px;
+    width: 141px;
+    height: 55px;
 }
 button:hover {
     background:black;
@@ -102,7 +148,7 @@ button:hover {
 .inform-box {
     display: flex;
     align-items: center;
-    padding-right: 60px;
+    padding: 10px 60px 10px 40px;
 }
 .inform-box p {
     color: grey;
@@ -112,19 +158,56 @@ button:hover {
 }
 .service-list {
     display:flex;
+    justify-content: space-between;
+    padding: 20px 100px 20px 100px;
 }
-.box-list {
+.box-item {
     width: 25%;
     text-align: center;
+    border: 3px solid #F3F3F3;
+    width: 270px;
+    height: 200px;
+    
 }
-.box-list img {
-    width: 100px;
-    height: 80px;
+.box-item img {
+    width: 50px;
+    height: 50px;
+    padding-top: 25px;
 }
 #grey-text {
-    color: grey;
-    font-size: 12pt;
+    font-size: 20px;
+    line-height: 1.4444;
+    font-family: Work Sans,sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: normal;
+    letter-spacing: 0;
+    color: #777;
+    text-transform: none;
+    padding-top: 20px;
+    padding-bottom: 50px;
 }
 .green {
     color: green;
+}
+.box-first-text {
+    font-size: 24px;
+    line-height: 1.4;
+    font-family: Work Sans,sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    font-style: normal;
+    letter-spacing: 0;
+    color: #242424;
+}
+.box-second-text {
+    font-size: 14px;
+    line-height: 1.4285;
+    font-family: Work Sans,sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    font-style: normal;
+    letter-spacing: 0;
+    color: #777;
+    
 }
