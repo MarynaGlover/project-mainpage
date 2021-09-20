@@ -1,0 +1,75 @@
+#burger-checkbox {
+    display: none;
+}
+@media (max-width: 700px) {
+    #box {
+        background-color: orange;
+    }
+}
+@media (max-width: 700px) {
+    #nav {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        list-style-type: none;
+        }
+    #nav a {
+        text-decoration: none;
+    }
+    .social-media {
+        text-align: center;
+    }
+    .contact-box {
+        text-align: center;
+    }
+    .inform-box {
+        display: none;
+    }
+    .burger-icon:hover {
+        cursor: pointer;
+    }
+    #nav {
+        display: none;
+    }
+   
+
+    .menu input:checked ~ #nav {
+        display: flex;
+    }
+    .musical-instruments {
+        font-size: 8px;
+        }
+    .selection {
+        font-size: 26px;
+    }
+    #grey-text {
+        font-size: 10px;
+
+    }
+    .service-list {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .box-item {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .box-item:first-child {
+        margin-top: 20px;
+    }
+   .background-text {
+       padding-top: 10%;
+       padding-left: 2%;
+   }
+   .logo {
+       padding-left: 2%;
+   }
+   .menu {
+       text-align: right;
+   }
+   .burger-icon {
+       font-size: 24px;
+   }
+}
+

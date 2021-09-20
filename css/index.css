@@ -1,3 +1,9 @@
+@media (max-width: 700px) {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+}
 body {
     padding: 0;
     margin: 0;
@@ -15,6 +21,7 @@ p {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","SF Pro Text";
 
 }
+
 .contacts {
     margin-left: auto;
     padding-bottom: 0px;
@@ -28,40 +35,54 @@ p {
     padding-right: 20px;
     text-decoration: none;
 }
-#box {
+@media (min-width: 700px) {
+    #box {
     background-color: orange;
     box-orient: horizontal;
     align-items: center;
     display: flex;
     height: 70px;
 }
-.logo {
+}
+
+@media (min-width: 700px) {
+    .logo {
     width: 10%;
     margin-right: 40px;
     padding-left:100px;
 }
+}
+@media (min-width: 700px) {
 .logo img {
     width: 157px;
 }
-.menu {
+}
+@media (min-width: 700px) {
+     .menu {
     margin-left: auto;
     margin-right: -200px;
 }
-#nav {
+}
+@media (min-width: 700px) {
+    #nav {
     color: white;
     text-align: right;
     margin-left: auto;
     text-decoration: none;
     list-style-type: none;
 }
-#nav li {
+}
+@media (min-width: 700px) {
+    #nav li {
     display: inline;
-}    
-#nav a {
+} 
+}   
+@media (min-width: 700px) {
+    #nav a {
     margin-right: 30px;
 }
-
-.menu a {
+}
+    .menu a {
     color: white;
     text-decoration: none;
     font-size: 14px;
@@ -71,38 +92,55 @@ p {
     font-weight: 700;
     padding-right: 40;
 }
-.menu a:hover {
+    .menu a:hover {
     color:black;
     text-decoration: underline;
 }
-.social-media {
+@media (min-width: 700px) {
+    .social-media {
     text-align: right;
     background-color: orange;
 }
-.social-media img {
+}
+@media (min-width: 700px) {
+    .social-media img {
     width: 25px;
     height: 25px;
     padding-right: 10px;
+    
 }
-.social-media img:hover {
+}
+    .social-media img:hover {
     background-color: white;
 }
-.social-media {
+@media (min-width: 700px) {
+    .social-media {
     margin-left: auto;
     padding-right: 80px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
 }
 .background {
-    background: url("img/background.jpeg") no-repeat center;
-    background-size: 100% auto;
+    background: url("../img/background/background.jpeg") no-repeat center;
+    background-size: cover;
     background-position: center top;
     position: relative;
-    height: 675px;
+    min-height: 400px;
     }
-.background-text {
+    @media (min-width: 700px) {
+        .background {
+            height: 675px;
+        }
+    }
+    @media (min-width: 700px) {
+    .background-text {
     padding-left: 100px;
     padding-top: 200px;
     padding-bottom: 0px;
 }
+    }
 .musical-instruments {
     color: orange;
     font-size: 16px;
@@ -150,16 +188,23 @@ button:hover {
     align-items: center;
     padding: 10px 60px 10px 40px;
 }
+@media (max-width: 425px) 
+{inform-box {
+    padding: 0;
+}
+}
 .inform-box p {
     color: grey;
 }
 .orange {
     color: orange;
 }
+@media (min-width: 700px) {
 .service-list {
     display:flex;
     justify-content: space-between;
-    padding: 20px 100px 20px 100px;
+    padding: 20px 100px 20px 100px; 
+}
 }
 .box-item {
     width: 25%;
@@ -210,4 +255,8 @@ button:hover {
     letter-spacing: 0;
     color: #777;
     
+}
+@media (min-width: 700px) {.contact-box {
+    display: none;
+}
 }

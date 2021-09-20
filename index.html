@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Musical Instruments Store</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index-mobile.css">
 </head>
 
 <body>
@@ -24,8 +25,11 @@
             <img src="img/logo.svg" alt="logo" width="200">
 
         </div>
+        
         <div class="menu">
-            <ul id="nav">
+            <label class="burger-icon" for="burger-checkbox">☰</label>
+            <input type="checkbox" id="burger-checkbox">
+        <ul id="nav">
                 <li><a href="#">New Arrivals</a></li>
                 <li><a href="#">Best-Selling</a></li>
                 <li><a href="#">Guitars</a></li>
@@ -34,17 +38,25 @@
                 <li><a href="#">Contacts</a></li>
             </ul>
         </div>
+        <div class="contact-box">
+            <p>Welcome to Our Musical Instruments Store!</p>
+            <div class="contact-list">
+                <a href="mailto:sound@mail.com" style="color:grey">sound@mail.com</a>
+                <a href="tel:+1(234)5678900" style="color:grey">+1 (234) 567 89 00</a>
+            </div>
+        </div>
         <div class="social-media">
             <img src="img/img-social-media/facebook-logo.svg" alt="facebook">
             <img src="img/img-social-media/instagram-logo.svg" alt="instagram logo">
             <img src="img/img-social-media/youtube-logo.svg" alt="youtube logo">
         </div>
+        </div>
     </div>
 
     <div class="background">
-        <!--
-        <img src="img/background.jpeg" alt="musical instruments" width="1410">
-        -->
+        
+        <!--<img src="img/background/background.jpeg" alt="musical instruments" width="1410">-->
+    
         <div class="background-text">
             <p class="musical-instruments">Musical Instruments Store</p>
             <p class="selection">We have <span class="orange">everything</span><br>any musician may <br>need<span
