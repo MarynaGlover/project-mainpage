@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans&display=swap');
 @media (max-width: 700px) {
     * {
         padding: 0;
@@ -60,17 +62,21 @@ p {
 @media (min-width: 700px) {
      .menu {
     margin-left: auto;
-    margin-right: -200px;
+    display: flex;
+    flex-direction: row;
+
 }
 }
 @media (min-width: 700px) {
     #nav {
     color: white;
-    text-align: right;
+    text-align: left;
     margin-left: auto;
     text-decoration: none;
     list-style-type: none;
+  
 }
+
 }
 @media (min-width: 700px) {
     #nav li {
@@ -100,13 +106,14 @@ p {
     .social-media {
     text-align: right;
     background-color: orange;
+    padding-top: 12px;
 }
 }
 @media (min-width: 700px) {
     .social-media img {
     width: 25px;
     height: 25px;
-    padding-right: 10px;
+    margin-right: 10px;
     
 }
 }
@@ -123,7 +130,7 @@ p {
 }
 }
 .background {
-    background: url("../img/background/background.jpeg") no-repeat center;
+    background: url("../img/backgrounds/background.jpeg") no-repeat center;
     background-size: cover;
     background-position: center top;
     position: relative;
@@ -171,7 +178,7 @@ p {
     border: 0;
     margin-top: 20px;
 }
-button {
+#button1 {
     color: white;
     text-transform: capitalize;
     background-color: orange;
@@ -180,7 +187,7 @@ button {
     width: 141px;
     height: 55px;
 }
-button:hover {
+#button1:hover {
     background:black;
 }
 .inform-box {
@@ -212,6 +219,7 @@ button:hover {
     border: 3px solid #F3F3F3;
     width: 270px;
     height: 200px;
+    margin-right: 5%;
     
 }
 .box-item img {
@@ -256,7 +264,17 @@ button:hover {
     color: #777;
     
 }
+
 @media (min-width: 700px) {.contact-box {
     display: none;
 }
+.burger-icon {
+    display: none;
+}
+}
+@media (min-width: 700px) and (max-width: 1046px) {
+        .social-media {
+            display: none;
+        }
+    
 }

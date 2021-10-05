@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Musical Instruments Store</title>
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/index-mobile.css">
+    <link rel="stylesheet" href="css/first-page.css">
+    <link rel="stylesheet" href="css/first-page-mobile.css">
+    <script type="text/javascript" src="js/main-page.js"></script>
 </head>
 
 <body>
@@ -21,14 +22,19 @@
         </div>
     </header>
     <div id="box">
+        <div class="logo-burger">
         <div class="logo">
             <img src="img/logo.svg" alt="logo" width="200">
+        </div>
+        <div class="burger">
+            <label class="burger-icon" for="burger-checkbox">☰</label>
+            <input type="checkbox" id="burger-checkbox" onclick = "toggle()">
+            </div>
 
         </div>
         
         <div class="menu">
-            <label class="burger-icon" for="burger-checkbox">☰</label>
-            <input type="checkbox" id="burger-checkbox">
+            
         <ul id="nav">
                 <li><a href="#">New Arrivals</a></li>
                 <li><a href="#">Best-Selling</a></li>
@@ -37,7 +43,6 @@
                 <li><a href="#">Orchestric</a></li>
                 <li><a href="#">Contacts</a></li>
             </ul>
-        </div>
         <div class="contact-box">
             <p>Welcome to Our Musical Instruments Store!</p>
             <div class="contact-list">
@@ -46,12 +51,14 @@
             </div>
         </div>
         <div class="social-media">
-            <img src="img/img-social-media/facebook-logo.svg" alt="facebook">
-            <img src="img/img-social-media/instagram-logo.svg" alt="instagram logo">
-            <img src="img/img-social-media/youtube-logo.svg" alt="youtube logo">
+            <img src="img/facebook-logo.svg" alt="facebook">
+            <img src="img/instagram-logo.svg" alt="instagram logo">
+            <img src="img/youtube-logo.svg" alt="youtube logo">
         </div>
         </div>
+        
     </div>
+</div>
 
     <div class="background">
         
@@ -64,29 +71,29 @@
             <hr class="horizontal-line">
             <p id="grey-text">Instruments, equipment & supplies from <span class="green">$50</span></p>
             
-            <div class="button">
-                <button>Shop Now</button>
+            <div>
+                <button id="button1">Shop Now</button>
             </div>
         </div>
     </div>
         <div class="service-list">
             <div id="box-1" class="box-item">
-                    <img src="img/img-logos/truck.svg" alt="delivery truck">
+                    <img src="img/truck.svg" alt="delivery truck">
                     <p class="box-first-text">Free Delivery<span style="color:orange">.</span></p>
                     <p class="box-second-text">For all orders over $300</p>
             </div>
             <div id="box-2" class="box-item">
-                    <img src="img/img-logos/returns.svg" alt="returns">
+                    <img src="img/returns.svg" alt="returns">
                     <p class="box-first-text">90-Day Returns<span style="color:orange">.</span></p>
                     <p class="box-second-text">Our goal is your satisfaction</p>
             </div>
             <div id="box-3" class="box-item">
-                    <img src="img/img-logos/secure-payment.svg" alt="payment">
+                    <img src="img/secure-payment.svg" alt="payment">
                     <p class="box-first-text">Secure Payment<span style="color:orange">.</span></p>
                     <p class="box-second-text">We accept Visa and Mastercard</p>
             </div>
             <div id="box-4" class="box-item">
-                    <img src="img/img-logos/support.svg" alt="support">
+                    <img src="img/support.svg" alt="support">
                     <p class="box-first-text">24/7 Support<span style="color:orange">.</span></p>
                     <p class="box-second-text">We'll answer all your questions</p>
             </div>
